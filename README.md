@@ -27,3 +27,7 @@ This is a simple web-based sentiment analyzer for product reviews.
 ## Live Demo
 
 You can host it using GitHub Pages for a public link.
+
+## ⚠️ Limitations
+
+One limitation of this sentiment analyzer is that it may incorrectly classify phrases like **"not good"** as **positive**. This happens because the current JavaScript logic is rule-based and only checks for the presence of positive or negative keywords. For example, if the word “good” appears anywhere in the review, the sentiment is considered positive—even if it’s preceded by a negative word like “not”.
